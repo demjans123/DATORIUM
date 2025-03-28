@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Datu analizators</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Datu analizators</h1>
+        <p class="text-center">Augšupielādē CSV failu ar datiem (column1, column2, column3, column4)</p>
+        <form method="POST" enctype="multipart/form-data" class="text-center">
+            <input type="file" name="file" accept=".csv" required class="form-control-file d-inline-block">
+            <button type="submit" class="btn btn-primary mt-2">Analizēt</button>
+        </form>
+        <div class="mt-4">
+            <h3>Filtri pēc Column2</h3>
+            <a href="/filter/A" class="btn btn-secondary">A</a>
+            <a href="/filter/B" class="btn btn-secondary">B</a>
+        </div>
+    </div>
+</body>
+</html>

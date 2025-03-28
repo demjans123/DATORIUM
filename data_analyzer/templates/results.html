@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Analīzes rezultāti</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Analīzes rezultāti</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Column4 vērtību sadalījums</h3>
+                <img src="{{ url_for('static', filename='histogram.png') }}" class="img-fluid" alt="Histogramma">
+            </div>
+            <div class="col-md-6">
+                <h3>Column4 vidējās vērtības pa Column3</h3>
+                <img src="{{ url_for('static', filename='bar_chart.png') }}" class="img-fluid" alt="Stabiņu diagramma">
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Atgriezties uz galveno lapu</a>
+    </div>
+</body>
+</html>
